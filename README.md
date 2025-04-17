@@ -16,7 +16,7 @@ The code is implemented in Python==3.8, timm==0.9.10, torch==2.0.1.
 
 ├── train_model.py              #Train a vanilla base model 
 
-├── pc_certification.py                  #Generate masked mutants and their prediction results
+├── pc_certification.py                  #Generate masked mutants and their prediction results (also the original sample)
 
 ├── contextcert_allcase.py    #Check the results of HiCert in all different cases
 
@@ -38,8 +38,7 @@ The code is implemented in Python==3.8, timm==0.9.10, torch==2.0.1.
   ```
 
   
-
-2. Then, generate and get the inference results of mutants in the dataset from the DL models.
+2. Then, generate and get the inference results of mutants (also the original sample) in the dataset from the DL models.
 
   ```python
 `python pc_certification.py --dataset gtsrb --model vit_base_patch16_224 --patch_size 32
